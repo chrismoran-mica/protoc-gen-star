@@ -44,7 +44,7 @@ type Context interface {
 	// Field.
 	OneofOption(field pgs.Field) pgs.Name
 
-	// TypeName returns the type name of a Field as it would appear in the
+	// Type returns the type name of a Field as it would appear in the
 	// generated message struct from protoc-gen-go. Fields from imported
 	// packages will be prefixed with the package name.
 	Type(field pgs.Field) TypeName
